@@ -1,0 +1,146 @@
+[
+  {
+    "id": "q_dist_01",
+    "topic": "Distributed Systems",
+    "target_skills": ["Distributed Systems", "Concurrency"],
+    "difficulty": "Senior",
+    "question": "How do you achieve distributed consensus in a partition-prone network, and what are the trade-offs between Raft and Paxos?",
+    "reference_concepts": "Raft, Paxos, leader election, log replication, split-brain, heartbeat, quorum"
+  },
+  {
+    "id": "q_dist_02",
+    "topic": "Distributed Systems",
+    "target_skills": ["Distributed Systems", "Distributed Caching"],
+    "difficulty": "Senior",
+    "question": "Explain how consistent hashing prevents massive cache re-mapping when dynamically adding or removing cache nodes.",
+    "reference_concepts": "hash ring, virtual nodes, hot spots, key distribution, minimal remapping"
+  },
+  {
+    "id": "q_kafka_01",
+    "topic": "Message Queues",
+    "target_skills": ["Kafka", "Message Queues", "Event-Driven Architecture"],
+    "difficulty": "Senior",
+    "question": "How does Apache Kafka guarantee at-least-once vs exactly-once processing, and how do consumer groups coordinate partition rebalancing?",
+    "reference_concepts": "idempotent producer, transactional coordinator, consumer offsets, commit, rebalance protocol"
+  },
+  {
+    "id": "q_kafka_02",
+    "topic": "Message Queues",
+    "target_skills": ["Kafka", "Event-Driven Architecture"],
+    "difficulty": "Mid",
+    "question": "What is the difference between a Kafka topic partition and an offset, and how do partitions enable horizontal scalability?",
+    "reference_concepts": "ordered log, partition key, consumer parallelism, retention policy"
+  },
+  {
+    "id": "q_go_01",
+    "topic": "Languages",
+    "target_skills": ["Go", "Concurrency"],
+    "difficulty": "Senior",
+    "question": "How does the Go runtime scheduler (GMP model) manage goroutines across operating system threads, and how do channels prevent race conditions?",
+    "reference_concepts": "goroutine, M thread, P processor, work stealing, channels, select, mutex"
+  },
+  {
+    "id": "q_redis_01",
+    "topic": "Databases & Caching",
+    "target_skills": ["Redis", "Distributed Caching"],
+    "difficulty": "Senior",
+    "question": "What strategies do you employ in Redis to prevent cache stampedes (thundering herd) and cache penetration?",
+    "reference_concepts": "bloom filter, mutex lock, probabilistic early expiration, background refresh, TTL jitter"
+  },
+  {
+    "id": "q_redis_02",
+    "topic": "Databases & Caching",
+    "target_skills": ["Redis", "Databases"],
+    "difficulty": "Mid",
+    "question": "Compare Redis RDB snapshots with AOF persistence. Under what conditions would you choose AOF over RDB?",
+    "reference_concepts": "point-in-time snapshot, append-only log, fsync, data loss window, recovery speed"
+  },
+  {
+    "id": "q_k8s_01",
+    "topic": "Cloud & DevOps",
+    "target_skills": ["Kubernetes", "Docker"],
+    "difficulty": "Senior",
+    "question": "How do Kubernetes Ingress controllers, Services (ClusterIP/NodePort), and kube-proxy route traffic to container pods?",
+    "reference_concepts": "iptables, IPVS, endpoints, service discovery, load balancing, pod network"
+  },
+  {
+    "id": "q_k8s_02",
+    "topic": "Cloud & DevOps",
+    "target_skills": ["Kubernetes", "Cloud"],
+    "difficulty": "Mid",
+    "question": "What is the difference between a Liveness Probe and a Readiness Probe in Kubernetes pod lifecycle management?",
+    "reference_concepts": "health check, restart pod, traffic removal, graceful startup"
+  },
+  {
+    "id": "q_sql_01",
+    "topic": "Databases",
+    "target_skills": ["PostgreSQL", "SQL"],
+    "difficulty": "Senior",
+    "question": "Explain PostgreSQL MVCC (Multi-Version Concurrency Control) and how vacuuming resolves table bloat under high write loads.",
+    "reference_concepts": "transaction ID, xmin, xmax, dead tuples, autovacuum, lock-free reads"
+  },
+  {
+    "id": "q_sql_02",
+    "topic": "Databases",
+    "target_skills": ["PostgreSQL", "SQL"],
+    "difficulty": "Mid",
+    "question": "How do B-Tree and GIN indexes differ in PostgreSQL, and when would you use a GIN index over a standard B-Tree?",
+    "reference_concepts": "inverted index, JSONB, full-text search, composite index, write overhead"
+  },
+  {
+    "id": "q_python_01",
+    "topic": "Languages",
+    "target_skills": ["Python", "Concurrency"],
+    "difficulty": "Senior",
+    "question": "How does Python's Global Interpreter Lock (GIL) impact CPU-bound multithreading, and when should you choose multiprocessing or asyncio instead?",
+    "reference_concepts": "GIL, thread safety, I/O bound vs CPU bound, event loop, multiprocessing memory overhead"
+  },
+  {
+    "id": "q_python_02",
+    "topic": "Frameworks",
+    "target_skills": ["Python", "FastAPI", "Flask"],
+    "difficulty": "Mid",
+    "question": "What are the performance and architectural differences between WSGI (e.g. Flask/Gunicorn) and ASGI (e.g. FastAPI/Uvicorn)?",
+    "reference_concepts": "synchronous request-response, async event loop, WebSockets, thread pool worker"
+  },
+  {
+    "id": "q_sys_01",
+    "topic": "System Design",
+    "target_skills": ["System Design", "Microservices"],
+    "difficulty": "Senior",
+    "question": "Design an end-to-end distributed rate limiter capable of enforcing tiered user quotas with sub-millisecond response latency.",
+    "reference_concepts": "token bucket, leaky bucket, sliding window counter, Redis cluster, distributed lock, fallback"
+  },
+  {
+    "id": "q_sys_02",
+    "topic": "System Design",
+    "target_skills": ["System Design", "Microservices", "gRPC"],
+    "difficulty": "Senior",
+    "question": "When migrating a monolithic application to microservices, how do you handle distributed transactions and eventual consistency without 2-phase commits?",
+    "reference_concepts": "saga pattern, orchestrator, choreographer, compensating transactions, outbox pattern"
+  },
+  {
+    "id": "q_sec_01",
+    "topic": "Security",
+    "target_skills": ["System Design", "Cloud"],
+    "difficulty": "Mid",
+    "question": "How do OAuth 2.0 authorization code grant flows differ from client credentials grants, and how do JWT signatures prevent tampering?",
+    "reference_concepts": "access token, refresh token, public key verification, HMAC, secret key, payload expiry"
+  },
+  {
+    "id": "q_algo_01",
+    "topic": "Algorithms",
+    "target_skills": ["System Design"],
+    "difficulty": "Senior",
+    "question": "Describe the Least Recently Used (LRU) cache design. How do you implement O(1) get and put operations?",
+    "reference_concepts": "doubly linked list, hash map, head and tail pointers, eviction policy"
+  },
+  {
+    "id": "q_beh_01",
+    "topic": "Behavioral",
+    "target_skills": ["System Design"],
+    "difficulty": "Senior",
+    "question": "Describe a production outage or critical regression you owned. How did you triage, resolve, and establish long-term guardrails?",
+    "reference_concepts": "incident response, blameless postmortem, root cause analysis, observability, monitoring, rollback"
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "mcpServers": {
+    "jupyter-nb": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-jupyter",
+        "${workspaceFolder}"
+      ]
+    },
+    "bigquery": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@google-cloud/bigquery-mcp"
+      ],
+      "env": {
+        "GOOGLE_APPLICATION_CREDENTIALS": ""
+      }
+    },
+    "huggingface": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-huggingface"
+      ],
+      "env": {
+        "HF_TOKEN": ""
+      }
+    }
+  }
+}
