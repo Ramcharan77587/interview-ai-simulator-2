@@ -173,5 +173,5 @@ npm run dev
 
 ## 🔒 Security & Privacy Notice
 - Never commit `.env` files or API secrets. `.env` is ignored by `.gitignore`.
-- Model weight artifacts in `models/exports/` are lightweight (`~223 KB` total) and tracked directly in Git without requiring Git LFS.
+- Model weight artifacts in `models/exports/` are lightweight (`~223 KB` total requirements) and tracked directly in Git without requiring Git LFS.
 - Audio recordings are processed ephemerally in temp memory and removed after feature extraction.
